@@ -3,38 +3,74 @@ import { motion } from "framer-motion";
 import bannerImg from "../../assets/banner.png";
 import "./banner.scss";
 
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      type: "spring",
+      stiffness: 160,
+      damping: 20,
+    },
+  },
+};
+
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-100%",
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 15,
+    },
+  },
+};
+
 function Banner() {
   return (
     <div className="banner">
       <div className="textWrapper">
-        <div className="textContainer">
-          <h2>
+        <motion.div
+          className="textContainer"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h2 variants={textVariants}>
             {" "}
-            Hi I'm{" "}
-            <motion.span 
-              className="name"
-            >
-              Dipanshu Saini
-            </motion.span>
-          </h2>
-          <h1>
+            Hi I'm <motion.span className="name">Dipanshu Saini</motion.span>
+          </motion.h2>
+          <motion.h1 variants={textVariants}>
             a{" "}
-            <motion.span className="programmer"
-            >
-              <motion.span
-                className="pro"
-              >
-                Pro
-              </motion.span>{" "}
+            <motion.span className="programmer">
+              <motion.span className="pro">Pro</motion.span>
               grammer
             </motion.span>
-          </h1>
-          <div className="buttons">
+          </motion.h1>
+          <motion.div variants={textVariants} className="buttons">
             <button>Projects</button>
             <button>Contact Me</button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
+
+      <motion.div
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+        className="floatingTextContainer"
+      >
+        FULL STACK WEB DEVELOPER
+      </motion.div>
+
       <div className="imgWrapper">
         <img src={bannerImg}></img>
       </div>
@@ -43,43 +79,3 @@ function Banner() {
 }
 
 export default Banner;
-
-
-
-
-{/* <h2>
-            {" "}
-            Hi I'm{" "}
-            <motion.span
-              transition={{ duration: 0.6 }}
-              whileHover={{ trasnlateY: "-3" }}
-              whileInView={{
-                fontSize: "45px",
-                color: "#1dd692",
-                textShadow: "#366ffe 1px 1px 10px",
-              }}
-              className="name"
-            >
-              Dipanshu Saini
-            </motion.span>
-          </h2>
-          <h1>
-            a{" "}
-            <motion.span
-              transition={{ duration: 0.5}}
-              whileInView={{
-                fontSize: "60px",
-                color: "#366ffe",
-                textShadow: "#366ffe 1px 1px 10px",
-              }}
-              className="programmer"
-            >
-              <motion.span
-                whileHover={{ color: "#ff7798" }}
-                className="pro"
-              >
-                Pro
-              </motion.span>{" "}
-              grammer
-            </motion.span>
-          </h1> */}

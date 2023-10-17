@@ -1,60 +1,89 @@
 .banner {
   height: calc(100vh - 100px);
-  background: linear-gradient(180deg, #17082f, #392952);
+  background: linear-gradient(180deg, #17082f6e, #39295287);
   position: relative;
+  overflow: hidden;
 
   .textWrapper {
-    // background-color: red;
     height: 100%;
     max-width: 70%;
     margin: auto;
-  }
 
-  .textContainer {
-    position: relative;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-  }
+    .textContainer {
+      position: relative;
+      left: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 9%;
+      gap: 15px;
 
-  h2 {
-    font-size: 24px;
-  }
+      h2 {
+        font-size: 24px;
 
-  h1 {
-    font-size: 50px;
-  }
+        .name {
+          font-size: 45px;
+          color: #1dd692;
+          text-shadow: #366ffe 1px 1px 10px;
+          position: relative;
+          z-index: 2;
+        }
 
-  .programmer,.name{
-    color: rebeccapurple;
-    cursor: pointer;
-  }
+        .name:hover {
+          text-shadow: #366ffe 1px 1px 13px;
+        }
+      }
 
-  .buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 16px;
+      h1 {
+        font-size: 50px;
 
-    button {
-      font-size: 14px;
-      font-weight: bold;
-      padding: 9px 10px;
-      border-radius: 11px;
-      cursor: pointer;
-      border: 1px solid #787878;
-      box-shadow: 0 0 2px white;
-      color: white;
-      background-color: #3b1f6a;
+        .programmer {
+          font-size: 60px;
+          color: #366ffe;
+          text-shadow: 1px 1px 10px #366ffe;
+          position: relative;
+          z-index: 2;
+
+          .pro {
+            color: #ff7798;
+          }
+        }
+
+        .programmer:hover {
+          text-shadow: 1px 1px 12px #366ffe;
+        }
+      }
+
+      .programmer,
+      .name {
+        color: rebeccapurple;
+        cursor: pointer;
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 16px;
+
+        button {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 9px 10px;
+          border-radius: 11px;
+          cursor: pointer;
+          border: 1px solid #787878;
+          box-shadow: 0 0 2px white;
+          color: white;
+          background-color: #3b1f6a;
+        }
+
+        button:hover {
+          box-shadow: 0 0 5px white;
+        }
+      }
     }
-
-    button:hover {
-      box-shadow: 0 0 5px white;
-    }
   }
-
   .imgWrapper {
     height: 110%;
     position: absolute;
@@ -64,5 +93,14 @@
     img {
       height: 100%;
     }
+  }
+
+  .floatingTextContainer {
+    position: absolute;
+    font-size: 30vh;
+    bottom: 0px;
+    white-space: nowrap;
+    color: #efcbcb0f;
+    width: 100%;
   }
 }
