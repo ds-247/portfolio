@@ -1,0 +1,38 @@
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    height: 100%;
+    margin: auto;
+    // max-width: 1366px;
+    max-width: 70%;
+    display: flex;
+    // border: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: inherit;
+      padding: 8px 10px;
+      margin-left: 13px;
+      background-color: #312245;
+      border-radius: 20px;
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 20px;
+      margin-right: 15px;
+    }
+    .socialIcons img {
+      width: 23px;
+      background-color: #58318c;
+      border-radius: 31px;
+      // box-shadow: 0 0 2px white;
+    }
+  }
+}

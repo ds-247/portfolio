@@ -1,0 +1,26 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: McLaren;
+}
+
+body{
+  background-color: #17082f;
+  color: lightgray;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-snap-align: center;
+  height: 100vh;
+}
