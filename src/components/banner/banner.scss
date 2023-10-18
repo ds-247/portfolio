@@ -27,7 +27,7 @@
           color: #1dd692;
           text-shadow: #366ffe 1px 1px 10px;
           position: relative;
-          z-index: 2;
+          z-index: 1;
         }
 
         .name:hover {
@@ -43,7 +43,7 @@
           color: #366ffe;
           text-shadow: 1px 1px 10px #366ffe;
           position: relative;
-          z-index: 2;
+          z-index: 1;
 
           .pro {
             color: #ff7798;
@@ -76,6 +76,7 @@
           box-shadow: 0 0 2px white;
           color: white;
           background-color: #3b1f6a;
+          z-index: 1;
         }
 
         button:hover {
@@ -97,8 +98,8 @@
 
   .floatingTextContainer {
     position: absolute;
-    font-size: 30vh;
-    bottom: 0px;
+    font-size: 50vh;
+    bottom: -50px;
     white-space: nowrap;
     color: #efcbcb0f;
     width: 100%;

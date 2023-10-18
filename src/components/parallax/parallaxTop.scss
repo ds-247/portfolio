@@ -1,0 +1,55 @@
+.parallaxTop {
+  background: linear-gradient(0deg, #17082f6e, #39295287);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  h1 {
+    color: #47a1ae99;
+  }
+
+  .mountain {
+    background-image: url("../../assets/topParallax/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .stars {
+    background-image: url("../../assets/topParallax/starsLama.png");
+    background-size: contain;
+    background-position: bottom;
+    width: 200vw;
+    height: 100%;
+    position: absolute;
+  }
+
+  .sun {
+    background-image: url("../../assets/topParallax/suning.png");
+    background-size: 130px 130px;
+    top: 9%;
+    left: 37%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .planet {
+    background-image: url("../../assets/topParallax/planet2.png");
+    background-size: 90px 90px;
+    top: 27%;
+    left: 72%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}

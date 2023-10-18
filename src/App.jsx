@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
 import "./App.scss";
+import ParallaxTop from "./components/parallax/ParallexTop";
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
         <Navbar />
         <Banner />
       </section>
-      <section>parallex</section>
+      <section>
+        <ParallaxTop />
+      </section>
       <section id="Skills">Skills</section>
       <section>parallex</section>
       <section id="Projects">Projects</section>
