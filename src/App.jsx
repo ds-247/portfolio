@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
 import ParallaxTop from "./components/parallax/ParallaxTop";
 import ParallaxBottom from "./components/parallax/ParallaxBottom";
+import Projects from "./components/projects/Projects";
 import "./App.scss";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <section>
         <ParallaxBottom />
       </section>
-      <section id="Projects">Projects</section>
+      <Projects />
       <section id="Contact">Contact</section>
     </>
   );
