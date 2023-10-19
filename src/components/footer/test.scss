@@ -1,0 +1,83 @@
+.contact {
+  //   background-color: orange;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  //   justify-content: space-between;
+  gap: 20px;
+  //   align-items: center;
+
+  .nav-container {
+    flex: 1;
+    // background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .svg-container {
+      //   background-color: #ff6767;
+      //   position: absolute;
+      //   height: 100%;
+      //   width: 100%;
+      stroke: red;
+
+      //   background-color: #ff6767;
+      position: absolute;
+      top: 0; /* Adjust positioning as needed */
+      left: 0; /* Adjust positioning as needed */
+      height: 100%;
+      width: 100%;
+      display: flex; /* Add this to center the SVG */
+      justify-content: center; /* Add this to center the SVG */
+      align-items: center; /* Add this to center the SVG */
+
+      svg {
+        height: 100%;
+      }
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+
+      h1 {
+        font-size: 40px;
+        color: orange;
+        letter-spacing: 4px;
+        text-shadow: 0 0 17px orange;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: bold;
+        color: #ff6767;
+      }
+
+      a {
+        color: #b08fe4;
+        text-decoration: underline;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        svg {
+          stroke: #b08fe4;
+          position: relative;
+          top: 3px;
+          left: -4px;
+        }
+      }
+
+      a:hover {
+        text-shadow: 0 0 1px #ff6767;
+      }
+    }
+  }
+
+  .map-container {
+    flex: 1;
+    // background-color: green;
+  }
+}

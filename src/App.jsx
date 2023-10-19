@@ -4,6 +4,8 @@ import Banner from "./components/banner/Banner";
 import ParallaxTop from "./components/parallax/ParallaxTop";
 import ParallaxBottom from "./components/parallax/ParallaxBottom";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/footer/Footer"
+import Test from "./components/footer/Test"
 import "./App.scss";
 
 function App() {
@@ -21,7 +23,10 @@ function App() {
         <ParallaxBottom />
       </section>
       <Projects />
-      <section id="Contact">Contact</section>
+      <section id="Contact">
+      {/* <Footer /> */}
+      <Test />
+      </section>
     </>
   );
 }
