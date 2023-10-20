@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Map from "./Map";
 import "./footer.scss";
 
 const icon = {
@@ -75,7 +76,10 @@ function Footer() {
         <motion.div
           className="wrapper"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: 3, duration: 0.5 } }}
+          whileInView={{
+            opacity: 1,
+            transition: { delay: 3, duration: 0.5 },
+          }}
         >
           <div className="text-container">
             <h1>ElseWhere</h1>
@@ -139,7 +143,9 @@ function Footer() {
           </div>
         </motion.div>
       </div>
-      <div className="map-container">her goes the map wala fopa</div>
+      <div className="map-container">
+        <Map />
+      </div>
     </div>
   );
 }
