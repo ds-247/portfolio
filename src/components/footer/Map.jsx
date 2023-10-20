@@ -7,6 +7,8 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 
+import geoData from "../../features.json";
+
 const Map = () => {
   return (
     <ComposableMap
@@ -19,7 +21,7 @@ const Map = () => {
       style={{ width: "100%", height: "100%" }}
     >
       <Geographies
-        geography="/features.json"
+        geography={geoData}
         fill="#b08fe4"
         stroke="indigo"
         strokeWidth={0.9}
