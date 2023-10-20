@@ -13,7 +13,7 @@ const icon = {
     // fill: "rgb(244 99 101 1)",
     transition: {
       ease: "easeInOut",
-      duration: 3,
+      duration: 2,
     },
   },
 };
@@ -30,7 +30,7 @@ function Footer() {
         <motion.div
           className="svg-wrapper"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0, transition: { delay: 2.9 } }}
+          whileInView={{ opacity: 0, transition: { delay: 2 } }}
         >
           <div className="svg-container">
             <svg
@@ -78,7 +78,7 @@ function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { delay: 3, duration: 0.5 },
+            transition: { delay: 2.5, duration: 0.5 },
           }}
         >
           <div className="text-container">
