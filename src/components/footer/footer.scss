@@ -30,6 +30,8 @@
     .text-container {
       display: flex;
       flex-direction: column;
+      position: relative;
+      z-index: 2;
       gap: 28px;
 
       h1 {

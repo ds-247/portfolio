@@ -3,6 +3,7 @@
   top: 0;
 
   .progress {
+    text-shadow: 1px 1px 4px orange;
     position: sticky;
     top: 0;
     left: 0;
@@ -12,9 +13,10 @@
     font-size: 21px;
 
     .progressBar {
-      height: 10px;
-      background-color: #43a047;
+      height: 6px;
+      background-color: #b32f2f;
       border-radius: 38%;
+      box-shadow: 0 0 20px #c57373;
     }
   }
 

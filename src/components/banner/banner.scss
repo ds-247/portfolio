@@ -66,21 +66,24 @@
         display: flex;
         gap: 16px;
 
-        button {
-          font-size: 14px;
-          font-weight: bold;
-          padding: 9px 10px;
-          border-radius: 11px;
-          cursor: pointer;
-          border: 1px solid #787878;
-          box-shadow: 0 0 2px white;
-          color: white;
-          background-color: #3b1f6a;
+        a {
           z-index: 1;
-        }
 
-        button:hover {
-          box-shadow: 0 0 5px white;
+          button {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 9px 10px;
+            border-radius: 11px;
+            cursor: pointer;
+            border: 1px solid #787878;
+            box-shadow: 0 0 2px white;
+            color: white;
+            background-color: #3b1f6a;
+          }
+
+          button:hover {
+            box-shadow: 0 0 5px white;
+          }
         }
       }
     }

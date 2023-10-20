@@ -56,8 +56,12 @@ function Banner() {
             </motion.span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <button>Projects</button>
-            <button>Contact Me</button>
+            <a href="#Projects">
+              <button>Projects</button>
+            </a>
+            <a href="#Contact">
+              <button>Contact Me</button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
