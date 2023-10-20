@@ -22,8 +22,6 @@ function Footer() {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
 
-  console.log(isInView);
-
   return (
     <div className="contact" ref={ref}>
       <div className="nav-container">

@@ -56,7 +56,7 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imgContainer" ref={ref}>
-            <a href={item.link}>
+            <a href={item.link} target="__blank">
               <motion.img
                 src={item.img}
                 alt=""
@@ -94,8 +94,8 @@ function Project() {
         <h1>Projects I Worked On...</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
+      {items.map((item,index) => (
+        <Single item={item} key={index} />
       ))}
     </div>
   );
