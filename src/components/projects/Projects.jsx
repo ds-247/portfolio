@@ -1,5 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import vidlyBg from "../../assets/projects/vidly-bg.png";
+import gameBg from "../../assets/projects/game-zone-bg.png";
+import oldPortfolioBg from "../../assets/projects/old-portfolio-bg.png";
+import newPortFolioBg from "../../assets/projects/new-portfolio-bg.png";
+import keeperbg from "../../assets/projects/keeper-icon.png";
 import "./projects.scss";
 
 const items = [
@@ -7,35 +12,35 @@ const items = [
     id: 1,
     title: "Keeper",
     link: "https://keeper-ed6d4.web.app/",
-    img: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: keeperbg,
     desc: "Introducing 'Keeper': Your secret keeper. A React and Firebase app for notes, your personal vault of ideas. Keep your musings safe, share only when you choose. Unlock your creativity with Keeper.",
   },
   {
     id: 1,
     title: "Portfolio",
     link: "https://ds-247.github.io/personal-site/",
-    img: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: oldPortfolioBg,
     desc: "Discover 'My Showcase' - A portfolio crafted with the artistry of vanilla HTML, CSS, and JavaScript. It's a digital canvas of my work, a window to my world. Dive into my creative journey at the click of a button.",
   },
   {
     id: 1,
     title: "Game Zone",
     link: "https://ds-247.github.io/gameZone/",
-    img: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: gameBg,
     desc: "Presenting 'Gaming Gallery' - A trio of web enchantments! Blackjack and Simon, HTML, CSS, JS — a cocktail of fun and challenge, all in one place. Ready to play?",
   },
   {
     id: 1,
     title: "Vidly",
     link: "https://vidly-client-ui.vercel.app/",
-    img: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: vidlyBg,
     desc: `Introducing "Vidly" - Your Ultimate Movie Rental Experiene.Vidly, the fusion of React's front-end brilliance and Node's back-end wizardry. Unlock top movies at your fingertips. Your one-stop-shop for cinematic delight. Enjoy the show!1`,
   },
   {
     id: 1,
     title: "New Year, New Portfolio",
     link: "#",
-    img: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: newPortFolioBg,
     desc: `Introducing "My New Portfolio" - Where My Journey Unfolds.My story, my projects, and my creativity, all in one place. A React-powered showcase with mesmerizing animations. Welcome to my world.`,
   },
 ];
@@ -94,7 +99,7 @@ function Project() {
         <h1>Projects I Worked On...</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
-      {items.map((item,index) => (
+      {items.map((item, index) => (
         <Single item={item} key={index} />
       ))}
     </div>
