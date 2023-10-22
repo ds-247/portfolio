@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Atom from "./AtomComp";
 import Test from "./models/Test";
 import "./skill.scss";
 
@@ -16,7 +15,7 @@ const variants = {
 const data = ["JAVA", "REACT", "NODE.JS", "HTML.CSS.JS", "MONGODB"];
 
 function Skill() {
-  const [item, setItem] = useState("REACT");
+  const [item, setItem] = useState("JAVA");
 
   return (
     <div className="skill">
@@ -36,15 +35,15 @@ function Skill() {
       </div>
       <div className="threed-section">
         {item === "JAVA" ? (
-          <Atom />
+          <Test />
         ) : item === "REACT" ? (
-          <Atom />
+          <Test />
         ) : item === "NODE.JS" ? (
-          <Atom />
+          <Test />
         ) : item === "HTML.CSS.JS" ? (
           <Test />
         ) : item === "MONGODB" ? (
-          <Atom />
+          <Test />
         ) : null}
       </div>
     </div>
