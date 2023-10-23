@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Test from "./models/Test";
+import Atom from "./models/Test";
+import Desktop from "./models/Desktop";
+import OldComp from "./models/OldComp";
 import "./skill.scss";
 
 const variants = {
@@ -35,15 +37,15 @@ function Skill() {
       </div>
       <div className="threed-section">
         {item === "JAVA" ? (
-          <Test />
+          <OldComp />
         ) : item === "REACT" ? (
-          <Test />
+          <Atom />
         ) : item === "NODE.JS" ? (
-          <Test />
+          <Desktop />
         ) : item === "HTML.CSS.JS" ? (
-          <Test />
+          <Atom />
         ) : item === "MONGODB" ? (
-          <Test />
+          <OldComp />
         ) : null}
       </div>
     </div>
