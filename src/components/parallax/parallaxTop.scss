@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .parallaxTop {
   background: linear-gradient(0deg, #17082f6e, #39295287);
   width: 100%;
@@ -10,6 +12,12 @@
 
   h1 {
     color: #47a1ae99;
+
+    @include mobile {
+      font-size: 35px;
+      position: relative;
+      bottom: -14%;
+    }
   }
 
   .mountain {
@@ -20,6 +28,11 @@
     height: 100%;
     position: absolute;
     z-index: 3;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .stars {
@@ -33,23 +46,33 @@
 
   .sun {
     background-image: url("../../assets/topParallax/suning.png");
-    background-size: 130px 130px;
-    top: 9%;
-    left: 37%;
+    background-size: 130px;
+    top: 2%;
+    left: 38%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
+
+    @include mobile {
+      top: 30%;
+      background-size: 100px;
+    }
   }
 
   .planet {
     background-image: url("../../assets/topParallax/planet2.png");
-    background-size: 90px 90px;
-    top: 27%;
-    left: 72%;
+    background-size: 90px;
+    top: 16%;
+    left: 57%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
+
+    @include mobile {
+      top: 49%;
+      background-size: 50px;
+    }
   }
 }

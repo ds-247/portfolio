@@ -1,8 +1,14 @@
+@import "../../App.scss";
+
 .contact {
   height: 100%;
   width: 100%;
   display: flex;
   gap: 20px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   .nav-container {
     flex: 1;
@@ -24,6 +30,10 @@
 
       svg {
         height: 100%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
 
@@ -34,17 +44,31 @@
       z-index: 2;
       gap: 28px;
 
+      @include mobile {
+        gap: 15px;
+        justify-content: center;
+        margin-left: 50px;
+      }
+
       h1 {
         font-size: 40px;
         color: orange;
         letter-spacing: 4px;
         text-shadow: 0 0 17px orange;
+
+        @include mobile {
+          font-size: 25px;
+        }
       }
 
       p {
         font-size: 17px;
         font-weight: bold;
         color: #ff6767;
+
+        @include mobile {
+          font-size: 14px;
+        }
       }
 
       a {
@@ -53,6 +77,10 @@
         font-size: 14px;
         letter-spacing: 1px;
         cursor: pointer;
+
+        @include mobile {
+          font-size: 12px;
+        }
 
         svg {
           stroke: #b08fe4;

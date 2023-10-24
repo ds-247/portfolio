@@ -1,15 +1,21 @@
+@import "../../App.scss";
+
 .navbar {
   height: 100px;
 
   .wrapper {
     height: 100%;
     margin: auto;
-    // max-width: 1366px;
-    max-width: 70%;
+    max-width: 1366px;
     display: flex;
-    // border: 1px solid white;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+      justify-content: space-between;
+      margin-right: 10px;
+      width: 75%;
+    }
 
     span {
       font-weight: bold;
@@ -33,7 +39,6 @@
       width: 23px;
       background-color: #58318c;
       border-radius: 31px;
-      // box-shadow: 0 0 2px white;
     }
   }
 }

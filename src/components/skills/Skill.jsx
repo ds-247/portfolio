@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Atom from "./models/Test";
-import Desktop from "./models/Desktop";
+// import Desktop from "./models/Desktop";
 import OldComp from "./models/OldComp";
 import "./skill.scss";
 
@@ -41,7 +41,7 @@ function Skill() {
         ) : item === "REACT" ? (
           <Atom />
         ) : item === "NODE.JS" ? (
-          <Desktop />
+          <OldComp />
         ) : item === "HTML.CSS.JS" ? (
           <Atom />
         ) : item === "MONGODB" ? (

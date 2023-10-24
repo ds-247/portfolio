@@ -140,4 +140,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/desktop/scene.gltf')
+// useGLTF.preload('/desktop/scene.gltf')

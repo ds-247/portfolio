@@ -11,19 +11,21 @@ function ParallaxTop() {
   });
 
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const fontText = useTransform(scrollYProgress, [0, 1], ["50px", "100px"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const xSunBg = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const ySunBg = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const xSunBg = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
+  const yPlanetBg = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
+  const xPlanetBg = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
 
   return (
     <div className="parallaxTop" ref={ref}>
-      <motion.h1 style={{ y: yText, fontSize: fontText }}>
-        Techs I Work With.
-      </motion.h1>
-      <motion.div className="stars" style={{ x: yBg }}></motion.div>
+      <motion.h1 style={{ y: yText }}>Techs I Work With.</motion.h1>
+      <motion.div className="stars" style={{ x: ySunBg }}></motion.div>
       <div className="mountain"></div>
-      <motion.div className="sun" style={{ y: yBg, x: xSunBg }}></motion.div>
-      <motion.div className="planet" style={{ x: xSunBg }}></motion.div>
+      <motion.div className="sun" style={{ y: ySunBg, x: xSunBg }}></motion.div>
+      <motion.div
+        className="planet"
+        style={{ y: yPlanetBg, x: xPlanetBg }}
+      ></motion.div>
     </div>
   );
 }

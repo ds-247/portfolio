@@ -76,7 +76,7 @@ function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { delay: 2.5, duration: 0.5 },
+            transition: { delay: 2.5, duration: 0.2 },
           }}
         >
           <div className="text-container">

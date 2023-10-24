@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import SideBar from './sidebar/SideBar';
+import SideBar from "./sidebar/SideBar";
 import gitIcon from "../../assets/githubIcon.png";
 import cvIcon from "../../assets/cvIcon.png";
 import "./navbar.scss";

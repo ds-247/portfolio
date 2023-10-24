@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .parallaxBottom {
   background: linear-gradient(0deg, #17082f6e, #39295287);
   width: 100%;
@@ -47,12 +49,16 @@
 
   .moon {
     background-image: url("../../assets/bottomParallax/mooning.png");
-    background-size: 150px 150px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: top;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 3;
+
+    @include mobile {
+      background-size: 100px;
+      top: 20%;
+    }
   }
 }
