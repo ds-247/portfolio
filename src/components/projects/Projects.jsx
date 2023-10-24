@@ -96,7 +96,7 @@ function Project() {
   return (
     <div id="Projects" className="project" ref={ref}>
       <div className="progress">
-        <h1>Projects I Worked On...</h1>
+        <h1>Projects I Worked On</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item, index) => (

@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .project {
   position: relative;
   top: 0;
@@ -11,12 +13,24 @@
     color: orange;
     text-align: center;
     font-size: 21px;
+    z-index: 5;
+
+    @include mobile {
+      font-size: 15px;
+      padding-top: 100px;
+      color: #c6c6c6;
+    }
 
     .progressBar {
       height: 6px;
       background-color: #b32f2f;
       border-radius: 38%;
       box-shadow: 0 0 20px #c57373;
+
+      @include mobile {
+        background-color: #ffffff;
+        margin-top: 10px;
+      }
     }
   }
 
@@ -28,8 +42,12 @@
     height: 100%;
     overflow: hidden;
 
+    @include mobile {
+      background: linear-gradient(180deg, rgb(35 28 47), rgb(32 26 53));
+    }
+
     .wrapper {
-      max-width: 70%;
+      // max-width: 70%;
       height: 100%;
       margin: auto;
       display: flex;
@@ -37,9 +55,22 @@
       justify-content: center;
       gap: 20px;
 
+      @include mobile {
+        margin-top: 200px;
+        height: 70%;
+        flex-direction: column;
+      }
+
       .imgContainer {
         flex: 2;
         height: 50%;
+
+        @include mobile {
+          flex: 1;
+          width: 110%;
+          max-height: 300px;
+        }
+
         img {
           height: 100%;
           width: 100%;
@@ -47,6 +78,11 @@
           cursor: pointer;
           border-radius: 12px;
           box-shadow: #8b898e 0px 1px 11px;
+
+          @include mobile {
+            object-fit: contain;
+            box-shadow: none;
+          }
         }
 
         img:hover {
@@ -60,15 +96,30 @@
         flex-direction: column;
         gap: 30px;
 
+        @include mobile {
+          transform: none !important;
+          margin: 0 10px;
+        }
+
         h2 {
           font-size: 40px;
           color: #ff6767;
           text-shadow: 0 0 5px #ff6767;
+
+          @include mobile {
+            font-size: 28px;
+            text-align: center;
+          }
         }
 
         p {
           font-size: 16px;
           color: grey;
+
+          @include mobile {
+            font-size: 12px;
+            text-align: center;
+          }
         }
       }
     }
