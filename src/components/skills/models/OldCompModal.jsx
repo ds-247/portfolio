@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+const resourcePath = import.meta.env.BASE_URL + "old_computer/scene.gltf";
+
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/old_computer/scene.gltf");
+  const { nodes, materials, animations } = useGLTF(resourcePath);
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
@@ -130,4 +132,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/old_computer/scene.gltf");
+useGLTF.preload(resourcePath);
