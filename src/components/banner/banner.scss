@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .banner {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 101px);
   background: linear-gradient(180deg, #17082f6e, #39295287);
   position: relative;
   overflow: hidden;
@@ -11,6 +11,10 @@
     // max-width: 1366px;
     width: 70%;
     margin: auto;
+
+    @include mobile {
+      width: 100%;
+    }
 
     .textContainer {
       position: relative;
@@ -57,7 +61,7 @@
         z-index: 1;
 
         @include mobile {
-          font-size: 30px;
+          font-size: 25px;
         }
 
         .programmer {
@@ -72,7 +76,7 @@
           }
 
           @include mobile {
-            font-size: 45px;
+            font-size: 40px;
           }
         }
 
@@ -121,9 +125,10 @@
     right: 0;
 
     @include mobile {
-      height: 65%;
+      height: 60%;
       top: unset;
       bottom: 0;
+      right: unset;
     }
 
     img {

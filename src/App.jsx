@@ -5,7 +5,7 @@ import ParallaxTop from "./components/parallax/ParallaxTop";
 import Skill from "./components/skills/Skill";
 import ParallaxBottom from "./components/parallax/ParallaxBottom";
 import Projects from "./components/projects/Projects";
-import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer";
 import "./App.scss";
 
 function App() {
@@ -18,13 +18,15 @@ function App() {
       <section>
         <ParallaxTop />
       </section>
-      <section id="Skills"><Skill /></section>
+      <section id="Skills">
+        <Skill />
+      </section>
       <section>
         <ParallaxBottom />
       </section>
       <Projects />
       <section id="Contact">
-      <Footer />
+        <Footer />
       </section>
     </>
   );

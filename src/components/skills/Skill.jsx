@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Atom from "./models/Test";
-// import Desktop from "./models/Desktop";
 import OldComp from "./models/OldComp";
 import "./skill.scss";
 
