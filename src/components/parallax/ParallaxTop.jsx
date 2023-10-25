@@ -11,6 +11,7 @@ function ParallaxTop() {
   });
 
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+  const scaleText = useTransform(scrollYProgress, [0, 1], [1, 2]);
   const ySunBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const xSunBg = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
   const scaleSunBg = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
@@ -20,7 +21,7 @@ function ParallaxTop() {
 
   return (
     <div className="parallaxTop" ref={ref}>
-      <motion.h1 style={{ y: yText }}>Techs I Work With.</motion.h1>
+      <motion.h1 style={{ y: yText, scale:scaleText }}>Techs I Work With.</motion.h1>
       <motion.div className="stars" style={{ x: ySunBg }}></motion.div>
       <div className="mountain"></div>
       <motion.div
