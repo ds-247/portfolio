@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bannerImg from "../../assets/banner.png";
+import bannerImg from "../../assets/typo.png";
 import "./banner.scss";
 
 const textVariants = {
@@ -45,7 +45,6 @@ function Banner() {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>
-            {" "}
             Hi I'm <motion.span className="name">Dipanshu Saini</motion.span>
           </motion.h2>
           <motion.h1 variants={textVariants}>

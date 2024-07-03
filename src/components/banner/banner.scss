@@ -119,16 +119,16 @@
     }
   }
   .imgWrapper {
-    height: 110%;
+    height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 17%;
 
     @include mobile {
       height: 60%;
       top: unset;
       bottom: 0;
-      right: unset;
+      right: 32%;
     }
 
     img {
